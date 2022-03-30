@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity_A">
-        <activity android:name=".ActivityPendaftaran"
+        <activity android:name=".ActivityLihatData"></activity>
+        <activity android:name=".Home_Activity" />
+        <activity
+            android:name=".ActivityPendaftaran"
             android:label="@string/mDaftar"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityKedua"
             android:label="@string/login"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".MainActivity" android:label="@string/loginForm">
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/loginForm">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
