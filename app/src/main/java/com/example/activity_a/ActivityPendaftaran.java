@@ -21,7 +21,6 @@ public class ActivityPendaftaran extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pendaftaran);
-        //////////////////
 
         //Harus dikasih access, kalo nggak progrmnya nyari null
         fab = (FloatingActionButton) findViewById(R.id.fabSimpan);

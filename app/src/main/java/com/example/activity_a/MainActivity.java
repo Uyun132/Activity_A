@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         //buat manggil activitynya
         if(item.getItemId() == R.id.mnDaftar){
-            Intent i = new Intent(getApplicationContext(), Home_Activity.class);
+            Intent i = new Intent(getApplicationContext(), ActivityPendaftaran.class);
             startActivity(i);
 
         }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast t = Toast.makeText(getApplicationContext(), "Login Sukses!", Toast.LENGTH_LONG); //lengthlong?
                         t.show();
                         //intent
-                        Intent i = new Intent(MainActivity.this,ActivityKedua.class);
+                        Intent i = new Intent(MainActivity.this,Home_Activity.class);
 
                         // object bundle?
                         Bundle b = new Bundle();

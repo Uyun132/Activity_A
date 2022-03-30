@@ -20,18 +20,6 @@ public class ListViewAdapter extends BaseAdapter{
 
     private ArrayList<ClassName> arrayList;
 
-    public ListViewAdapter(Context context){
-        mContext = context;
-        inflater = LayoutInflater.from(mContext);
-
-        this.arrayList = new ArrayList<ClassName>();
-        this.arrayList.addAll(Home_Activity.classNameArrayList);
-    }
-    public class ViewHolder{
-        TextView name;
-    }
-
-
     @Override
     public int getCount() {
         return Home_Activity.classNameArrayList.size();
@@ -60,8 +48,24 @@ public class ListViewAdapter extends BaseAdapter{
         }else {
             holder = (ViewHolder) view.getTag();
         }
+        holder.name.setText(Home_Activity.classNameArrayList.get(i).getName());
         return view;
 
     }
+
+    public ListViewAdapter(Context context){
+        mContext = context;
+
+        inflater = LayoutInflater.from(mContext);
+
+        this.arrayList = new ArrayList<ClassName>();
+        this.arrayList.addAll(Home_Activity.classNameArrayList);
+    }
+    public class ViewHolder{
+        TextView name;
+    }
+
+
+
 }
 
