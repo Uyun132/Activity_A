@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         //buat manggil activitynya
         if(item.getItemId() == R.id.mnDaftar){
-            Intent i = new Intent(getApplicationContext(), ActivityPendaftaran.class);
+            Intent i = new Intent(getApplicationContext(), Home_Activity.class);
             startActivity(i);
 
         }
